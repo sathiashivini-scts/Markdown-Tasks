@@ -160,6 +160,16 @@ DB_PASSWORD=password123
 PORT=8080
 ```
 
+### JSON Configuration
+```
+{
+  "DB_HOST": "localhost",
+  "DB_USER": "admin",
+  "DB_PASSWORD": "password123",
+  "PORT": 8080
+}
+```
+
 
 
 ---
@@ -185,6 +195,10 @@ To ensure system reliability, monitoring and logging mechanisms are implemented 
 | ERROR   | Service failures                     |
 | DEBUG   | Detailed troubleshooting information |
 
+### Logging Examples
+
+2026-06-25 10:00:01 INFO Student service started
+2026-06-25 10:00:05 ERROR Database connection failed
 
 ---
 
@@ -211,17 +225,40 @@ ping database-server
 docker inspect student-service
 ```
 
-### Recommended Actions
+### Docker Configuration
 
-* Verify Docker services are running.
-* Check database connectivity.
-* Review application logs.
-* Restart affected services if necessary.
+```
+FROM openjdk:17
+WORKDIR /app
+COPY target/student-service.jar app.jar
+ENTRYPOINT ["java", "-jar", "app.jar"]
+```
 
+### Docker Compose
 
+```
+version: "3.8"
+
+services:
+  student-service:
+    build: ./student-service
+    ports:
+      - "8081:8080"
+
+  auth-service:
+    build: ./auth-service
+    ports:
+      - "8082:8080"
+
+  database:
+    image: mysql:8
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+   ```   
+      
 ---
 
-## Project Structure
+### Project Structure
 
 ```text
 college-management-system/
