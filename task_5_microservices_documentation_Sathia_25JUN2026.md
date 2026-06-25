@@ -236,7 +236,7 @@ college-management-system/
 └── docker-compose.yml
 ```
 
-### Folder Description
+### Folder Structure
 
 * **auth-service/** - Authentication and authorization logic
 * **student-service/** - Student management functionality
