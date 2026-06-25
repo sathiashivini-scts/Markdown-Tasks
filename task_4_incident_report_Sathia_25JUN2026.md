@@ -2,8 +2,7 @@
 
 ## Incident Summary
 
-> On 4 June 2026, the College Student Portal experienced a database outage for 45 minutes. Students were unable to access attendance records, examination results, and academic schedules.
-
+> The College Student Portal was unavailable for about 45 minutes due to a database issue. During this time, students could not check their attendance, exam results, or academic schedules. Faculty members were also unable to update student records. The technical team identified the problem, restored the database service, and brought the portal back online without any loss of data.
 ---
 
 ## Timeline
