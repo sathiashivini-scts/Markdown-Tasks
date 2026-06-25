@@ -3,13 +3,15 @@
 ## Table of Contents
 
 1. [Architecture Overview](#architecture-overview)
-2. [Service Descriptions](#service-descriptions)
-3. [Deployment Process](#deployment-process)
-4. [CI/CD Pipeline](#cicd-pipeline)
-5. [Environment Variables](#environment-variables)
-6. [Monitoring and Logging](#monitoring-and-logging)
-7. [Troubleshooting Guide](#troubleshooting-guide)
-8. [Project Structure](#project-structure)
+2. [Components](#components-descriptions)
+3. [Service Descriptions](#service-descriptions)
+4. [Deployment Process](#deployment-process)
+5. [CI/CD Pipeline](#cicd-pipeline)
+6. [Environment Variables](#environment-variables)
+7. [Monitoring and Logging](#monitoring-and-logging)
+8. [Troubleshooting Guide](#troubleshooting-guide)
+9. [Project Structure](#project-structure)
+10. [Folder Structure](#folder-description)
 
 ---
 
@@ -32,7 +34,7 @@ graph TD
 ---
 ## Components
 
-The College Management System consists of several core components that work together to provide a complete academic management solution.
+
 
 | Component              | Description |
 | ---------------------- | ----------- |
